@@ -1,0 +1,7 @@
+IF DB_ID('NYC311_OLTP') IS NULL
+    CREATE DATABASE NYC311_OLTP;
+GO
+
+/*IF OBJECT_ID('dbo.ServiceRequestCore','U') IS NOT NULL
+    DROP TABLE dbo.ServiceRequestCore;
+GO
