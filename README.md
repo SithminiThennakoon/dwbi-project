@@ -19,7 +19,7 @@ This project implements a complete data warehouse solution for NYC 311 service r
 │       ├── NYC311_Load_Staging.dtsx    # Load data to staging
 │       ├── NYC311_Load_DW.dtsx         # Load data to data warehouse
 │       └── NYC311_Update_AccumFact.dtsx # Update accumulative fact
-├── CubeProject_IT23232990/    # SSAS Cube Project
+├── CubeProject/                   # SSAS Cube Project
 │   └── CubeProject_IT23232990/
 │       ├── Dim Agency.dim          # Agency dimension
 │       ├── Dim Channel.dim        # Channel dimension
@@ -98,12 +98,6 @@ This project was completed for **Assignment 2** of IT3021 Data Warehousing and B
 
 - LO4: Implement SSAS cube with dimensions and hierarchies
 - LO5: Create Power BI reports with advanced features
-
-## Student Information
-
-- **Student ID**: IT23232990
-- **Institute**: Sri Lanka Institute of Information Technology (SLIIT)
-- **Department**: Computer Science
 
 ## License
 
