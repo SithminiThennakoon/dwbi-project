@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{069EFB11-94EB-4C43-AD80-9337CCCEC1EE}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{D4386874-1A7C-4869-93C3-3313449CC34C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -429,13 +429,13 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="249.6,41.6"
-          Id="Package\Truncate Completion Update Staging"
-          TopLeft="44.1666642535065,46.7999996745586" />
-        <NodeLayout
           Size="222.4,41.6"
           Id="Package\Load Completion Updates CSV"
           TopLeft="233.333320584563,136.066665720476" />
+        <NodeLayout
+          Size="249.6,41.6"
+          Id="Package\Truncate Completion Update Staging"
+          TopLeft="44.1666642535065,46.7999996745586" />
         <NodeLayout
           Size="221.6,41.6"
           Id="Package\Update Fact Completion Times"
