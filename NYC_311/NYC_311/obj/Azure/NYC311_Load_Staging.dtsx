@@ -12,8 +12,8 @@
   DTS:MaxErrorCount="100"
   DTS:ObjectName="NYC311_Load_Staging"
   DTS:PackageType="5"
-  DTS:VersionBuild="24"
-  DTS:VersionGUID="{5C8240FC-F4DA-4362-AAA0-ABFA0581B34A}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{B6F75835-E3E6-4367-9E4C-C74683852769}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -346,169 +346,196 @@
                   <inputColumns>
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[unique_key]"
-                      cachedDataType="nText"
+                      cachedDataType="i8"
                       cachedName="unique_key"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[unique_key]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[unique_key]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[created_date]"
-                      cachedDataType="nText"
+                      cachedDataType="dbTimeStamp2"
                       cachedName="created_date"
+                      cachedScale="7"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[created_date]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[created_date]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[closed_date]"
-                      cachedDataType="nText"
+                      cachedDataType="dbTimeStamp2"
                       cachedName="closed_date"
+                      cachedScale="7"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[closed_date]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[closed_date]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[due_date]"
-                      cachedDataType="nText"
+                      cachedDataType="dbTimeStamp2"
                       cachedName="due_date"
+                      cachedScale="7"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[due_date]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[due_date]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[resolution_action_updated_date]"
-                      cachedDataType="nText"
+                      cachedDataType="dbTimeStamp2"
                       cachedName="resolution_action_updated_date"
+                      cachedScale="7"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[resolution_action_updated_date]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[resolution_action_updated_date]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[agency]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="20"
                       cachedName="agency"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[agency]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[agency]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[agency_name]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="200"
                       cachedName="agency_name"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[agency_name]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[agency_name]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[complaint_type]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="200"
                       cachedName="complaint_type"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[complaint_type]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[complaint_type]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[descriptor]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="300"
                       cachedName="descriptor"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[descriptor]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[descriptor]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[status]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="status"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[status]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[status]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[open_data_channel_type]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="open_data_channel_type"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[open_data_channel_type]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[open_data_channel_type]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[resolution_description]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="4000"
                       cachedName="resolution_description"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[resolution_description]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[resolution_description]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address_type]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="address_type"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address_type]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[address_type]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[location_type]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="200"
                       cachedName="location_type"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[location_type]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[location_type]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[facility_type]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="facility_type"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[facility_type]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[facility_type]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[community_board]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="community_board"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[community_board]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[community_board]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[council_district]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="20"
                       cachedName="council_district"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[council_district]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[council_district]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[police_precinct]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="police_precinct"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[police_precinct]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[police_precinct]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[bbl]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="30"
                       cachedName="bbl"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[bbl]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[bbl]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[park_facility_name]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="200"
                       cachedName="park_facility_name"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[park_facility_name]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[park_facility_name]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[park_borough]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="100"
                       cachedName="park_borough"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[park_borough]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[park_borough]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[vehicle_type]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="100"
                       cachedName="vehicle_type"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[vehicle_type]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[vehicle_type]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[taxi_company_borough]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="100"
                       cachedName="taxi_company_borough"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[taxi_company_borough]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[taxi_company_borough]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[taxi_pick_up_location]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="100"
                       cachedName="taxi_pick_up_location"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[taxi_pick_up_location]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[taxi_pick_up_location]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[bridge_highway_name]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="200"
                       cachedName="bridge_highway_name"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[bridge_highway_name]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[bridge_highway_name]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[bridge_highway_direction]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="50"
                       cachedName="bridge_highway_direction"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[bridge_highway_direction]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[bridge_highway_direction]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[road_ramp]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="100"
                       cachedName="road_ramp"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[road_ramp]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[road_ramp]" />
                     <inputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[bridge_highway_segment]"
-                      cachedDataType="nText"
+                      cachedDataType="wstr"
+                      cachedLength="200"
                       cachedName="bridge_highway_segment"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[bridge_highway_segment]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[bridge_highway_segment]" />
@@ -697,7 +724,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[vw_ServiceRequestCore_Typed]</property>
+                  name="OpenRowset">[dbo].[vw_ServiceRequestCore_SSIS]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -706,36 +733,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT
-  TRY_CONVERT(BIGINT, unique_key) AS unique_key,
-  TRY_CONVERT(DATETIME2, created_date) AS created_date,
-  TRY_CONVERT(DATETIME2, closed_date) AS closed_date,
-  TRY_CONVERT(DATETIME2, due_date) AS due_date,
-  TRY_CONVERT(DATETIME2, resolution_action_updated_date) AS resolution_action_updated_date,
-  CAST(agency AS NVARCHAR(20)) AS agency,
-  CAST(agency_name AS NVARCHAR(200)) AS agency_name,
-  CAST(complaint_type AS NVARCHAR(200)) AS complaint_type,
-  CAST(descriptor AS NVARCHAR(300)) AS descriptor,
-  CAST(status AS NVARCHAR(50)) AS status,
-  CAST(open_data_channel_type AS NVARCHAR(50)) AS open_data_channel_type,
-  CAST(resolution_description AS NVARCHAR(4000)) AS resolution_description,
-  CAST(address_type AS NVARCHAR(50)) AS address_type,
-  CAST(location_type AS NVARCHAR(200)) AS location_type,
-  CAST(facility_type AS NVARCHAR(50)) AS facility_type,
-  CAST(community_board AS NVARCHAR(50)) AS community_board,
-  CAST(council_district AS NVARCHAR(20)) AS council_district,
-  CAST(police_precinct AS NVARCHAR(50)) AS police_precinct,
-  CAST(bbl AS NVARCHAR(30)) AS bbl,
-  CAST(park_facility_name AS NVARCHAR(200)) AS park_facility_name,
-  CAST(park_borough AS NVARCHAR(100)) AS park_borough,
-  CAST(vehicle_type AS NVARCHAR(100)) AS vehicle_type,
-  CAST(taxi_company_borough AS NVARCHAR(100)) AS taxi_company_borough,
-  CAST(taxi_pick_up_location AS NVARCHAR(100)) AS taxi_pick_up_location,
-  CAST(bridge_highway_name AS NVARCHAR(200)) AS bridge_highway_name,
-  CAST(bridge_highway_direction AS NVARCHAR(50)) AS bridge_highway_direction,
-  CAST(road_ramp AS NVARCHAR(100)) AS road_ramp,
-  CAST(bridge_highway_segment AS NVARCHAR(200)) AS bridge_highway_segment
-FROM dbo.ServiceRequestCore;</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -752,7 +750,7 @@ FROM dbo.ServiceRequestCore;</property>
                   dataType="System.Int32"
                   description="Specifies the mode used to access the database."
                   name="AccessMode"
-                  typeConverter="AccessMode">2</property>
+                  typeConverter="AccessMode">0</property>
                 <property
                   dataType="System.String"
                   description="The mappings between the parameters in the SQL command and variables."
@@ -773,7 +771,7 @@ FROM dbo.ServiceRequestCore;</property>
                   <outputColumns>
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[unique_key]"
-                      dataType="nText"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[unique_key]"
@@ -782,244 +780,271 @@ FROM dbo.ServiceRequestCore;</property>
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[created_date]"
-                      dataType="nText"
+                      dataType="dbTimeStamp2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[created_date]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[created_date]"
                       name="created_date"
+                      scale="7"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[closed_date]"
-                      dataType="nText"
+                      dataType="dbTimeStamp2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[closed_date]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[closed_date]"
                       name="closed_date"
+                      scale="7"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[due_date]"
-                      dataType="nText"
+                      dataType="dbTimeStamp2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[due_date]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[due_date]"
                       name="due_date"
+                      scale="7"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[resolution_action_updated_date]"
-                      dataType="nText"
+                      dataType="dbTimeStamp2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[resolution_action_updated_date]"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[resolution_action_updated_date]"
                       name="resolution_action_updated_date"
+                      scale="7"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[agency]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[agency]"
+                      length="20"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[agency]"
                       name="agency"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[agency_name]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[agency_name]"
+                      length="200"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[agency_name]"
                       name="agency_name"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[complaint_type]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[complaint_type]"
+                      length="200"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[complaint_type]"
                       name="complaint_type"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[descriptor]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[descriptor]"
+                      length="300"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[descriptor]"
                       name="descriptor"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[status]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[status]"
+                      length="50"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[status]"
                       name="status"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[open_data_channel_type]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[open_data_channel_type]"
+                      length="50"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[open_data_channel_type]"
                       name="open_data_channel_type"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[resolution_description]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[resolution_description]"
+                      length="4000"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[resolution_description]"
                       name="resolution_description"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[address_type]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[address_type]"
+                      length="50"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[address_type]"
                       name="address_type"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[location_type]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[location_type]"
+                      length="200"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[location_type]"
                       name="location_type"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[facility_type]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[facility_type]"
+                      length="50"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[facility_type]"
                       name="facility_type"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[community_board]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[community_board]"
+                      length="50"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[community_board]"
                       name="community_board"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[council_district]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[council_district]"
+                      length="20"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[council_district]"
                       name="council_district"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[police_precinct]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[police_precinct]"
+                      length="50"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[police_precinct]"
                       name="police_precinct"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[bbl]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[bbl]"
+                      length="30"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[bbl]"
                       name="bbl"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[park_facility_name]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[park_facility_name]"
+                      length="200"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[park_facility_name]"
                       name="park_facility_name"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[park_borough]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[park_borough]"
+                      length="100"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[park_borough]"
                       name="park_borough"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[vehicle_type]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[vehicle_type]"
+                      length="100"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[vehicle_type]"
                       name="vehicle_type"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[taxi_company_borough]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[taxi_company_borough]"
+                      length="100"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[taxi_company_borough]"
                       name="taxi_company_borough"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[taxi_pick_up_location]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[taxi_pick_up_location]"
+                      length="100"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[taxi_pick_up_location]"
                       name="taxi_pick_up_location"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[bridge_highway_name]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[bridge_highway_name]"
+                      length="200"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[bridge_highway_name]"
                       name="bridge_highway_name"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[bridge_highway_direction]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[bridge_highway_direction]"
+                      length="50"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[bridge_highway_direction]"
                       name="bridge_highway_direction"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[road_ramp]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[road_ramp]"
+                      length="100"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[road_ramp]"
                       name="road_ramp"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[bridge_highway_segment]"
-                      dataType="nText"
+                      dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[bridge_highway_segment]"
+                      length="200"
                       lineageId="Package\Extract Core Data to Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[bridge_highway_segment]"
                       name="bridge_highway_segment"
                       truncationRowDisposition="FailComponent" />
@@ -1442,56 +1467,56 @@ FROM dbo.ServiceRequestCore;</property>
                       refId="Package\Extract Location CSV to Staging\Data Conversion.Inputs[Data Conversion Input].Columns[incident_zip]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="20"
                       cachedName="incident_zip"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[incident_zip]" />
                     <inputColumn
                       refId="Package\Extract Location CSV to Staging\Data Conversion.Inputs[Data Conversion Input].Columns[incident_address]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="300"
                       cachedName="incident_address"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[incident_address]" />
                     <inputColumn
                       refId="Package\Extract Location CSV to Staging\Data Conversion.Inputs[Data Conversion Input].Columns[street_name]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="200"
                       cachedName="street_name"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[street_name]" />
                     <inputColumn
                       refId="Package\Extract Location CSV to Staging\Data Conversion.Inputs[Data Conversion Input].Columns[cross_street_1]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="200"
                       cachedName="cross_street_1"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[cross_street_1]" />
                     <inputColumn
                       refId="Package\Extract Location CSV to Staging\Data Conversion.Inputs[Data Conversion Input].Columns[cross_street_2]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="200"
                       cachedName="cross_street_2"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[cross_street_2]" />
                     <inputColumn
                       refId="Package\Extract Location CSV to Staging\Data Conversion.Inputs[Data Conversion Input].Columns[intersection_street_1]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="200"
                       cachedName="intersection_street_1"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[intersection_street_1]" />
                     <inputColumn
                       refId="Package\Extract Location CSV to Staging\Data Conversion.Inputs[Data Conversion Input].Columns[intersection_street_2]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="200"
                       cachedName="intersection_street_2"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[intersection_street_2]" />
                     <inputColumn
                       refId="Package\Extract Location CSV to Staging\Data Conversion.Inputs[Data Conversion Input].Columns[city]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="city"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[city]" />
                     <inputColumn
@@ -1505,7 +1530,7 @@ FROM dbo.ServiceRequestCore;</property>
                       refId="Package\Extract Location CSV to Staging\Data Conversion.Inputs[Data Conversion Input].Columns[landmark]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="300"
                       cachedName="landmark"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[landmark]" />
                     <inputColumn
@@ -1536,7 +1561,7 @@ FROM dbo.ServiceRequestCore;</property>
                       refId="Package\Extract Location CSV to Staging\Data Conversion.Inputs[Data Conversion Input].Columns[location]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="200"
                       cachedName="location"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[location]" />
                   </inputColumns>
@@ -1969,7 +1994,7 @@ FROM dbo.ServiceRequestCore;</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[incident_zip]"
-                      length="50"
+                      length="20"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[incident_zip]"
                       name="incident_zip"
                       truncationRowDisposition="FailComponent">
@@ -1991,7 +2016,7 @@ FROM dbo.ServiceRequestCore;</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[incident_address]"
-                      length="50"
+                      length="300"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[incident_address]"
                       name="incident_address"
                       truncationRowDisposition="FailComponent">
@@ -2013,7 +2038,7 @@ FROM dbo.ServiceRequestCore;</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[street_name]"
-                      length="50"
+                      length="200"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[street_name]"
                       name="street_name"
                       truncationRowDisposition="FailComponent">
@@ -2035,7 +2060,7 @@ FROM dbo.ServiceRequestCore;</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cross_street_1]"
-                      length="50"
+                      length="200"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[cross_street_1]"
                       name="cross_street_1"
                       truncationRowDisposition="FailComponent">
@@ -2057,7 +2082,7 @@ FROM dbo.ServiceRequestCore;</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cross_street_2]"
-                      length="50"
+                      length="200"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[cross_street_2]"
                       name="cross_street_2"
                       truncationRowDisposition="FailComponent">
@@ -2079,7 +2104,7 @@ FROM dbo.ServiceRequestCore;</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[intersection_street_1]"
-                      length="50"
+                      length="200"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[intersection_street_1]"
                       name="intersection_street_1"
                       truncationRowDisposition="FailComponent">
@@ -2101,7 +2126,7 @@ FROM dbo.ServiceRequestCore;</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[intersection_street_2]"
-                      length="50"
+                      length="200"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[intersection_street_2]"
                       name="intersection_street_2"
                       truncationRowDisposition="FailComponent">
@@ -2123,7 +2148,7 @@ FROM dbo.ServiceRequestCore;</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
-                      length="50"
+                      length="100"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[city]"
                       name="city"
                       truncationRowDisposition="FailComponent">
@@ -2167,7 +2192,7 @@ FROM dbo.ServiceRequestCore;</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[landmark]"
-                      length="50"
+                      length="300"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[landmark]"
                       name="landmark"
                       truncationRowDisposition="FailComponent">
@@ -2273,7 +2298,7 @@ FROM dbo.ServiceRequestCore;</property>
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[location]"
-                      length="50"
+                      length="200"
                       lineageId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].Columns[location]"
                       name="location"
                       truncationRowDisposition="FailComponent">
@@ -2300,49 +2325,49 @@ FROM dbo.ServiceRequestCore;</property>
                       refId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[incident_zip]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="20"
                       name="incident_zip" />
                     <externalMetadataColumn
                       refId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[incident_address]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="300"
                       name="incident_address" />
                     <externalMetadataColumn
                       refId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[street_name]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="200"
                       name="street_name" />
                     <externalMetadataColumn
                       refId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cross_street_1]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="200"
                       name="cross_street_1" />
                     <externalMetadataColumn
                       refId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cross_street_2]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="200"
                       name="cross_street_2" />
                     <externalMetadataColumn
                       refId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[intersection_street_1]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="200"
                       name="intersection_street_1" />
                     <externalMetadataColumn
                       refId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[intersection_street_2]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="200"
                       name="intersection_street_2" />
                     <externalMetadataColumn
                       refId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="100"
                       name="city" />
                     <externalMetadataColumn
                       refId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[borough]"
@@ -2354,7 +2379,7 @@ FROM dbo.ServiceRequestCore;</property>
                       refId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[landmark]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="300"
                       name="landmark" />
                     <externalMetadataColumn
                       refId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[x_coordinate_state_plane]"
@@ -2380,7 +2405,7 @@ FROM dbo.ServiceRequestCore;</property>
                       refId="Package\Extract Location CSV to Staging\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[location]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="200"
                       name="location" />
                   </externalMetadataColumns>
                 </output>
@@ -2759,14 +2784,14 @@ FROM dbo.ServiceRequestCore;</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,93.5999990598361"
+              EndConnector="0,93.5999990598362"
               Start="0,0"
-              End="0,86.0999990598361">
+              End="0,86.0999990598362">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,86.0999990598361" />
+                    End="0,86.0999990598362" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2786,25 +2811,37 @@ FROM dbo.ServiceRequestCore;</property>
         <NodeLayout
           Size="152,41.6"
           Id="Package\Extract Core Data to Staging\OLE DB Source"
-          TopLeft="319.16664922817,76.2666661363178" />
+          TopLeft="284.166651140485,85.7999994033575" />
         <NodeLayout
           Size="171.2,41.6"
           Id="Package\Extract Core Data to Staging\OLE DB Destination"
-          TopLeft="305.833316623337,247.866664943033" />
+          TopLeft="314.166649501358,230.533331730233" />
         <EdgeLayout
           Id="Package\Extract Core Data to Staging.Paths[OLE DB Source Output]"
-          TopLeft="393.299982925753,117.866666136318">
+          TopLeft="360.166651140485,127.399999403358">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,129.999998806715"
+              EndConnector="39.5999983608724,103.133332326876"
               Start="0,0"
-              End="0,122.499998806715">
+              End="39.5999983608724,95.6333323268758">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,122.499998806715" />
+                    End="0,47.5666661634379" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47.5666661634379"
+                    Point2="0,51.5666661634379"
+                    Point3="4,51.5666661634379" />
+                  <mssgle:LineSegment
+                    End="35.5999983608724,51.5666661634379" />
+                  <mssgle:CubicBezierSegment
+                    Point1="35.5999983608724,51.5666661634379"
+                    Point2="39.5999983608724,51.5666661634379"
+                    Point3="39.5999983608724,55.5666661634379" />
+                  <mssgle:LineSegment
+                    End="39.5999983608724,95.6333323268758" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2816,19 +2853,6 @@ FROM dbo.ServiceRequestCore;</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Extract Core Data to Staging\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">View</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <DtsEventHandler
     design-time-name="Package\Extract Core Data to Staging.EventHandlers[OnPreExecute]">
     <LayoutInfo>
@@ -2847,13 +2871,13 @@ FROM dbo.ServiceRequestCore;</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151.2,41.6"
-          Id="Package\Extract Location CSV to Staging\Flat File Source"
-          TopLeft="345.999994844198,118.999998226762" />
-        <NodeLayout
           Size="171.2,41.6"
           Id="Package\Extract Location CSV to Staging\OLE DB Destination"
           TopLeft="448.999993309379,308.999995395541" />
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Extract Location CSV to Staging\Flat File Source"
+          TopLeft="345.999994844198,118.999998226762" />
         <NodeLayout
           Size="156,41.6"
           Id="Package\Extract Location CSV to Staging\Data Conversion"
@@ -2929,6 +2953,18 @@ FROM dbo.ServiceRequestCore;</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Extract Location CSV to Staging.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="216,41.6"
+          Id="Package\Extract Location CSV to Staging.EventHandlers[OnPreExecute]\Truncate StgRequestLocation"
+          TopLeft="296.999995574355,154.99999769032" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
   <PipelineComponentMetadata
     design-time-name="Package\Extract Location CSV to Staging\OLE DB Destination">
     <Properties>
@@ -2942,18 +2978,19 @@ FROM dbo.ServiceRequestCore;</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <DtsEventHandler
-    design-time-name="Package\Extract Location CSV to Staging.EventHandlers[OnPreExecute]">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
-        <NodeLayout
-          Size="216,41.6"
-          Id="Package\Extract Location CSV to Staging.EventHandlers[OnPreExecute]\Truncate StgRequestLocation"
-          TopLeft="296.999995574355,154.99999769032" />
-      </GraphLayout>
-    </LayoutInfo>
-  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Core Data to Staging\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">View</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Extract Core Data to Staging\OLE DB Destination">
     <Properties>

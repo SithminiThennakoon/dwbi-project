@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D3E22C90-81A7-4DC1-76CF-2BF8C511851E}|CubeProject_IT23232990\\CubeProject_IT23232990.dwproj|C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\CubeProject_IT23232990\\NYC311 DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{D3E22C90-81A7-4DC1-76CF-2BF8C511851E}|CubeProject_IT23232990\\CubeProject_IT23232990.dwproj|solutionrelative:CubeProject_IT23232990\\NYC311 DW.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3E22C90-81A7-4DC1-76CF-2BF8C511851E}|CubeProject_IT23232990\\CubeProject_IT23232990.dwproj|C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\CubeProject_IT23232990\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{D3E22C90-81A7-4DC1-76CF-2BF8C511851E}|CubeProject_IT23232990\\CubeProject_IT23232990.dwproj|solutionrelative:CubeProject_IT23232990\\Dim Date.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3E22C90-81A7-4DC1-76CF-2BF8C511851E}|CubeProject_IT23232990\\CubeProject_IT23232990.dwproj|C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\CubeProject_IT23232990\\Dim Location.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{D3E22C90-81A7-4DC1-76CF-2BF8C511851E}|CubeProject_IT23232990\\CubeProject_IT23232990.dwproj|solutionrelative:CubeProject_IT23232990\\Dim Location.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3E22C90-81A7-4DC1-76CF-2BF8C511851E}|CubeProject_IT23232990\\CubeProject_IT23232990.dwproj|C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\CubeProject_IT23232990\\NYC311 DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{D3E22C90-81A7-4DC1-76CF-2BF8C511851E}|CubeProject_IT23232990\\CubeProject_IT23232990.dwproj|solutionrelative:CubeProject_IT23232990\\NYC311 DW.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NYC311 DW.cube [Design]",
+              "DocumentMoniker": "C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\CubeProject_IT23232990\\NYC311 DW.cube",
+              "RelativeDocumentMoniker": "CubeProject_IT23232990\\NYC311 DW.cube",
+              "ToolTip": "C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\CubeProject_IT23232990\\NYC311 DW.cube [Design]",
+              "RelativeToolTip": "CubeProject_IT23232990\\NYC311 DW.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-03T12:24:28.364Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dim Location.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\CubeProject_IT23232990\\Dim Location.dim",
+              "RelativeDocumentMoniker": "CubeProject_IT23232990\\Dim Location.dim",
+              "ToolTip": "C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\CubeProject_IT23232990\\Dim Location.dim [Design]",
+              "RelativeToolTip": "CubeProject_IT23232990\\Dim Location.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-03T12:11:35.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dim Date.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\CubeProject_IT23232990\\Dim Date.dim",
+              "RelativeDocumentMoniker": "CubeProject_IT23232990\\Dim Date.dim",
+              "ToolTip": "C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\CubeProject_IT23232990\\Dim Date.dim [Design]",
+              "RelativeToolTip": "CubeProject_IT23232990\\Dim Date.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-03T06:49:18.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NYC311 DW.dsv [Design]",
+              "DocumentMoniker": "C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\CubeProject_IT23232990\\NYC311 DW.dsv",
+              "RelativeDocumentMoniker": "CubeProject_IT23232990\\NYC311 DW.dsv",
+              "ToolTip": "C:\\Users\\sithu\\OneDrive\\Desktop\\DWBI Project\\CubeProject_IT23232990\\CubeProject_IT23232990\\NYC311 DW.dsv [Design]",
+              "RelativeToolTip": "CubeProject_IT23232990\\NYC311 DW.dsv [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-03T06:38:20.728Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
